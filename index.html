@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SIR.CHARLEZ</title>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+body{background:#09060a;color:#f7ead8;font-family:system-ui, sans-serif}
+
+@keyframes floatLogo{
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(-10px)}
+}
+
+@keyframes halo{
+0%,100%{opacity:.6;transform:scale(.95)}
+50%{opacity:1;transform:scale(1.05)}
+}
+
+.heroHalo{
+animation:halo 6s ease-in-out infinite;
+}
+
+.logoFloat{
+animation:floatLogo 7s ease-in-out infinite;
+}
+
+.bgGlow{
+background:radial-gradient(circle at 50% 100%,rgba(255,198,107,.25),transparent 60%);
+}
+</style>
+</head>
+
+<body>
+
+<header class="sticky top-0 backdrop-blur border-b border-white/10 bg-[#09060a]/70">
+<div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+<h1 class="tracking-[0.3em] text-[#f3d39a] font-semibold">SIR.CHARLEZ</h1>
+<nav class="space-x-6 text-sm">
+<a href="#music">Music</a>
+<a href="#shows">Shows</a>
+<a href="#socials">Social</a>
+<a href="#booking">Booking</a>
+</nav>
+</div>
+</header>
+
+<section class="min-h-[90vh] flex items-center justify-center relative text-center px-6 bgGlow">
+
+<div class="absolute w-[420px] h-[420px] rounded-full bg-[#f1c56e]/20 blur-3xl heroHalo"></div>
+
+<div>
+<img src="sir-charlez-logo.png" class="w-[420px] max-w-full mx-auto logoFloat" />
+<p class="mt-6 text-2xl text-[#f3dcc0]">Soundtracks for New Beginnings</p>
+
+<div class="mt-8 flex gap-4 justify-center">
+<a href="#music" class="px-6 py-3 bg-[#e0b96d] text-black rounded-xl">Listen</a>
+<a href="#booking" class="px-6 py-3 border border-white/30 rounded-xl">Book</a>
+</div>
+</div>
+
+</section>
+
+<section id="music" class="max-w-6xl mx-auto px-6 py-20">
+<h2 class="text-4xl mb-8 text-[#f3d39a]">Featured Track</h2>
+
+<iframe
+width="100%"
+height="300"
+scrolling="no"
+frameborder="no"
+allow="autoplay"
+src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/sr-charlez/new-beginning">
+</iframe>
+</section>
+
+<section id="shows" class="max-w-6xl mx-auto px-6 py-20">
+<h2 class="text-4xl mb-8 text-[#f3d39a]">Upcoming Shows</h2>
+
+<div class="space-y-4">
+<div class="p-6 border border-white/10 rounded-xl">
+<b>Apr 18, 2026</b><br/>Halo Lounge — Atlanta
+</div>
+
+<div class="p-6 border border-white/10 rounded-xl">
+<b>May 02, 2026</b><br/>Celestial Rooftop — Miami
+</div>
+
+<div class="p-6 border border-white/10 rounded-xl">
+<b>May 16, 2026</b><br/>The Grand Room — Charlotte
+</div>
+</div>
+</section>
+
+<section id="socials" class="max-w-6xl mx-auto px-6 py-20">
+<h2 class="text-4xl mb-8 text-[#f3d39a]">Follow</h2>
+
+<div class="flex gap-6">
+<a href="https://soundcloud.com/sr-charlez" target="_blank">SoundCloud</a>
+<a href="https://instagram.com/djsir.charlez" target="_blank">Instagram</a>
+<a href="https://tiktok.com/@sir.charlez" target="_blank">TikTok</a>
+</div>
+</section>
+
+<section id="booking" class="max-w-6xl mx-auto px-6 py-20">
+<h2 class="text-4xl mb-8 text-[#f3d39a]">Booking</h2>
+
+<form action="mailto:djsir.charlez@gmail.com" method="post" enctype="text/plain" class="space-y-4 max-w-lg">
+<input placeholder="Name" name="name" class="w-full p-3 bg-black/40 border border-white/10 rounded" />
+<input placeholder="Email" name="email" class="w-full p-3 bg-black/40 border border-white/10 rounded" />
+<textarea placeholder="Message" name="message" class="w-full p-3 bg-black/40 border border-white/10 rounded"></textarea>
+<button class="px-6 py-3 bg-[#e0b96d] text-black rounded">Send</button>
+</form>
+</section>
+
+<footer class="text-center py-10 text-sm text-white/50">
+© <script>document.write(new Date().getFullYear())</script> SIR.CHARLEZ
+</footer>
+
+</body>
+</html>
